@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+// import '../assets/bangkok.png';
 import './Card.css';
 
 class Card extends Component {
 	render () {
 		return (
 			<div className="Card" >
-				<img src="https://via.placeholder.com/320x300" alt="city"/>
+				
 				<div className="CardDetail" > 
 					<h2> {this.props.city} </h2> 
 					<div className="DateDetail" >

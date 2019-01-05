@@ -9,6 +9,25 @@
     color: #666;
 }
 
+.level1 {
+    color: #009966;
+}
+.level2 {
+    color: #ffde33;
+}
+.level3 {
+    color: #ff9933;
+}
+.level4 {
+    color: #cc0033;
+}
+.level5 {
+    color: #660099;
+}
+.level6 {
+    color: #7e0023;
+}
+
 .CardDetail {
     padding: 15px;
 }
