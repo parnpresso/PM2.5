@@ -138,3 +138,14 @@ CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'UTC'
+
+# django-cors-headers
+
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_HEADERS = (
+    'content-type',
+    'Authorization'
+)
+CORS_ALLOW_METHODS = (
+    'GET',
+)
