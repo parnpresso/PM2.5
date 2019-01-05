@@ -1,0 +1,31 @@
+.Card {
+    display: block;
+    width: 320px;
+    height: auto;
+    margin: 40px auto;
+    box-shadow: 0px 1px 4px #ccc;
+}
+.DateDetail {
+    color: #666;
+}
+
+.CardDetail {
+    padding: 15px;
+}
+.CardDetail h2 {
+    text-transform: uppercase;
+    color: #333;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+.CardDetail h1 {
+    font-size: 50px;
+    font-weight: 300;
+    margin: 25px 0 0;
+}
+.CardDetail p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
