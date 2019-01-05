@@ -2,26 +2,20 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-
+from aqis.models import Aqi
+from cities.models import City
 
 
 class CityListView(APIView):
     def get(self, request):
-        # poppers = Popper.objects.all().values(
-        #     'user',
-        #     'popper_type',
-        #     'popper_facebook',
-        #     'popper_line',
-        #     'is_actived',
-        # )
-
-        # data = list(poppers)
+        city = City.objects.get(name='Bangkok')
+        aqi = Aqi.objects.filter(city=city).order_by('pk')
 
         data = {
-            'city': 'Bangkok',
-            'pm_value': 112,
-            'pm_level': 6,
-            'date': '2019-01-05 19:00:00',
+            'city': city.name,
+            'pm_value': aqi[0].pm25_value,
+            'pm_level': aqi[0].pm25_level,
+            'date': aqi[0].datetime,
         }
 
         return Response(data, status=status.HTTP_200_OK)
