@@ -7,13 +7,19 @@ from aqis.models import Aqi
 class AqiAdmin(admin.ModelAdmin):
     list_display = (
         'city',
-        'datetime'
+        'pm25_value',
+        'pm25_level',
+        'datetime',
     )
     list_filter = (
         'city',
-        'datetime'
+        'pm25_value',
+        'pm25_level',
+        'datetime',
     )
     search_fields = [
         'city',
-        'datetime'
+        'pm25_value',
+        'pm25_level',
+        'datetime',
     ]
