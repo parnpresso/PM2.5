@@ -1,0 +1,6 @@
+Django==2.1
+psycopg2-binary==2.7.5
+django-extensions==2.1.0
+django-celery-beat==1.1.1
+Celery==4.2.0
+redis==2.10.6
